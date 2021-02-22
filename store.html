@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paradox | Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styleselect.css" />
+        <link rel="stylesheet" href="buttonmenu.css" />
+        <link rel="stylesheet" href="addqty.css" />
+
+        <script src="store.js" async></script>
+        <script src="main.js" async></script>
+        <script src="changeqty.js" async></script>
+        <script src="addchange.js" async></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">MENU</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <div>
+            <img src="Images/logo.jpg" alt="logo" class="logocenter">
+        </div>
+        <div class="container">
+            <h2>Reserve a Table</h2>
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="Outside" name="category" />
+                        <label for="Outside">Outside Table Nu (1)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="2" name="category" />
+                        <label for="2">Outside Table Nu (2)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="3" name="category" />
+                        <label for="3">Outside Table Nu (3)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="4" name="category" />
+                        <label for="4">Inside Table Nu (4)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="5" name="category" />
+                        <label for="5">Inside Table Nu (5)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="6" name="category" />
+                        <label for="6">Inside Table Nu (6)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="7" name="category" />
+                        <label for="7">Inside Table Nu (7)</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Select Table
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            
+            <button class="tablink" onclick="openPage('Appetizers', this, '#56CCF2')"><h2>Appetizers</h2></button>
+            <button class="tablink" onclick="openPage('Salads', this, '#56CCF2')"><h2>Salads</h2></button>
+            <button class="tablink" onclick="openPage('Sandwiches', this, '#56CCF2')"><h2>Sandwiches</h2></button>
+            <button class="tablink" onclick="openPage('Burgers', this, '#56CCF2')"><h2>Burgers</h2></button>
+            <button class="tablink" onclick="openPage('Platters', this, '#56CCF2')"><h2>Platters</h2></button>
+            <button class="tablink" onclick="openPage('Chicken Farrouj', this, '#56CCF2')"><h2>Chicken Farrouj</h2></button>
+            <button class="tablink" onclick="openPage('Shawarma', this, '#56CCF2')"><h2>Shawarma</h2></button>
+            <button class="tablink" onclick="openPage('Lebanese', this, '#56CCF2')"><h2>Lebanese</h2></button>
+            <button class="tablink" onclick="openPage('Beverages ', this, '#56CCF2')"><h2>Beverages</h2></button>
+            <button class="tablink" onclick="openPage('Total Amount', this, '#56CCF2')"><h2>Total Amount</h2></button>
+
+        </div>
+        <div id="Appetizers" class="tabcontent">
+            <section class="container content-section">
+                <h2 class="section-header">Appetizers</h2>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Fries Box</span>
+                        <img class="shop-item-image" src="Images/FRIESBOX.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price"><h2>7000 LBP</h2></span>
+                            <input onclick="this.value='Item Added'" type="button" value="Add +" class="btn btn-primary shop-item-button"</input>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Fries [1 Plate]</span>
+                        <img class="shop-item-image" src="Images/Fries1.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price"><h2>9000 LBP</h2></span>
+                            <input onclick="this.value='Item Added'" type="button" value="Add +" class="btn btn-primary shop-item-button"</input>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Wedges Potato</span>
+                        <img class="shop-item-image" src="Images/WEDGES.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price"><H2>7000 LBP</H2></span>
+                            <input onclick="this.value='Item Added'" type="button" value="Add +" class="btn btn-primary shop-item-button"</input>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Chicken Nuggets 6 Pieces</span>
+                        <img class="shop-item-image" src="Images/nugets6.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price"><H2>7000 LBP</H2></span>
+                            <input onclick="this.value='Item Added'" type="button" value="Add +" class="btn btn-primary shop-item-button"</input>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            </section>
+        <div id="Salads" class="tabcontent">
+            <section class="container content-section">
+                <h2 class="section-header">Salads</h2>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Chicken Cesar Salad</span>
+                        <img class="shop-item-image" src="Images/ceaser.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price"><h2>16000 LBP</h2></span>
+                            <input onclick="this.value='Item Added'" type="button" value="Add +" class="btn btn-primary shop-item-button"</input>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Season Salad</span>
+                        <img class="shop-item-image" src="Images/SEASON.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price"><h2>10000 LBP</h2></span>
+                            <input onclick="this.value='Item Added'" type="button" value="Add +" class="btn btn-primary shop-item-button"</input>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Coleslaw Saladd</span>
+                        <img class="shop-item-image" src="Images/Coleslaw Salad.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price"><h2>2000 LBP</h2></span>
+                            <input onclick="this.value='Item Added'" type="button" value="Add +" class="btn btn-primary shop-item-button"</input>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            </section>
+        <div id="Total Amount" class="tabcontent">
+            <section class="container content-section">
+                <h2 class="section-header">Your Order</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price"><H2>0 LBP</H2></span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">Send Order</button>
+            </section>
+        </div>
+            <footer class="main-footer">
+                <div class="container main-footer-container">
+                    <h3 class="band-name">Paradox</h3>
+                    <ul class="nav footer-nav">
+                        <li>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <img src="Images/YouTube Logo.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.spotify.com" target="_blank">
+                                <img src="Images/Spotify Logo.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="Images/Facebook Logo.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+</body>
+</html>

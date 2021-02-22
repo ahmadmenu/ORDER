@@ -1,0 +1,15 @@
+﻿button {
+  border: 0;
+  border-radius: 1.3rem;
+  background: #a856f2;
+  color: white;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  cursor: pointer;
+  outline:none;
+}

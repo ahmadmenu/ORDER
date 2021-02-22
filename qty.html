@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    <style>
+     .form-group {
+	width: 10%;
+	margin: 30px;
+	input[type="text"] {
+		width: 100%;
+		text-align: right;
+	}
+    </style>
+    <body>
+        <div class="form-group">
+            <label>Quantity: </label>
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button id="down" class="btn btn-default" onclick=" down('0')"><span class="glyphicon glyphicon-minus"></span></button>
+                </div>
+                <input type="text" id="myNumber" class="form-control input-number" value="1" />
+                <div class="input-group-btn">
+                    <button id="up" class="btn btn-default" onclick="up('10')"><span class="glyphicon glyphicon-plus"></span></button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</head>
+</html>
+
